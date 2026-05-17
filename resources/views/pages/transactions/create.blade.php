@@ -23,21 +23,17 @@
                         <div class="d-flex align-items-center mb-3">
 
                             <!-- IMAGE -->
-                            <img src="{{ $cart->book->cover_photo ? asset('storage/books/' . $cart->book->cover_photo) : 'https://via.placeholder.com/300x400' }}"
+                            <img src="{{ $cart->book->cover_photo_url ? asset('storage/books/' . $cart->book->cover_photo) : 'https://via.placeholder.com/300x400' }}"
                                 class="rounded me-3" alt="{{ $cart->book->title }}"
                                 style="height: 70px; width: 55px; object-fit: contain;">
 
-                            <!-- DETAIL -->
+                            <!-- DETAIL + PRICE -->
                             <div class="grow">
                                 <h6 class="fw-bold mb-0">{{ $cart->book->title }}</h6>
                                 <small class="text-secondary">{{ $cart->book->author->name }}</small>
                                 <p class="mb-0">Qty: {{ $cart->quantity }}</p>
-                            </div>
-
-                            <!-- PRICE -->
-                            <div class="text-end">
                                 <strong class="text-success">
-                                    Rp {{ number_format($cart->book->price * $cart->quantity) }}
+                                    Rp {{ number_format($cart->book->price) }}
                                 </strong>
                             </div>
 

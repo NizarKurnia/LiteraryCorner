@@ -11,8 +11,8 @@
 
             <div class="card shadow-sm">
 
-                <img src="{{ $book->image ?? 'https://via.placeholder.com/500x700' }}" class="card-img-top"
-                    alt="{{ $book->title }}" style="height: 600px; object-fit: cover;">
+                <img src="{{ $book->cover_photo_url ?? 'https://via.placeholder.com/500x700' }}" class="card-img-top"
+                    alt="{{ $book->title }}" style="height: 600px; object-fit: contain;">
 
             </div>
 
