@@ -1,0 +1,4 @@
+Saat mau mencoba untuk melihat hasil website mungkin gambarnya tidak muncul,
+jadi perlu dilakukan edit gambar di dashboard admin untuk masing-masing data yang ada fotonya.
+
+credential admin dan user ada di code.
